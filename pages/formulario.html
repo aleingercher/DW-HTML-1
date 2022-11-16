@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- FORMULARIO -->
+    <h3>Algunos atributos de un form</h3>
+    <ul>
+        <li>name ==> nombre con que se enviara su valor</li>
+        <li>value ==> el valor</li>
+        <li>type ==> tipo de input</li>
+        <li>for ==> va en los label. Lo asocia a un id</li>
+        <li>id ==> sirve como identificador unico del elemento. Lo relaciona con su label</li>
+        <li>required ==> obligatorio</li>
+        <li>placeholder</li>
+        <li>selected (para select)</li>
+        <li>checked (checkbox, radio)</li>
+        <li>maxlength, minlength</li>
+        <li>min, max</li>
+        <li>autocomplete ==> puede ser on u off</li>
+        <li>multiple (email, file) ==> si puede mandar mas de un elemento</li>
+        <li>autofocus</li>
+        <li>step (range) ==> pasos </li>
+        <li>accept (file) ==> image/* , .jpg, .pdf</li>
+    </ul>
+    <form >
+
+        <h3>INPUTS que son boton</h3>
+        <input type="submit" value="ENVIAR">
+        <input type="reset" value="RESET">
+        <input type="button" value="BOTON SIN UTILIDAD">
+        <h3>OTROS TIPOS DE INPUT</h3>
+        <label>text</label>
+        <input type="text" ><br><br>
+        <label>email</label>
+        <input type="email"><br><br>
+        <label>password</label>
+        <input type="password"><br><br>
+        <label>number</label>
+        <input type="number"><br><br>
+        <label>file</label>
+        <input type="file" ><br><br>
+        <label for="">textarea</label>
+        <textarea name="" id="" cols="20" rows="5"></textarea><br><br>
+        <label>range</label>
+        <input type="range" step="10" value="20"><br><br>
+        <label>search</label>
+        <input type="search"><br><br>
+        <h3>CONTROLES DE SELECCION</h3>
+        <h4>checkbox (multiple)</h4>
+        <label for="">Fuego</label>
+        <input type="checkbox" name="tipoPokemon"><br><br>
+        <label for="">Roca</label>
+        <input type="checkbox" name="tipoPokemon"><br><br>
+        <label for="">Psiquico</label>
+        <input type="checkbox" name="tipoPokemon"><br><br>
+        <h4>radio (uno solo)</h4>
+        <p>casa</p>
+        <label for="Slytherin" >Slytherin</label>
+        <input type="radio" name="casa" value="Slytherin" id="Slytherin">
+        <label>Gryffindor</label>
+        <input type="radio" name="casa" value="Gryffindor">
+        <h4>select (o combo box)</h4>
+        <label for="pais">A donde queres viajar?</label>
+        <select name="pais" id="pais">
+            <option value="Qatar">Qatar</option>
+            <option value="Argentina" selected>Argentina</option>
+            <option value="Brasil">Brasil</option>
+        </select>
+        
+        <br><br>
+        <fieldset>
+            <legend>Fecha de llegada</legend>
+            <label>date</label>
+            <input type="date"><br><br>
+            <label>date</label>
+            <input type="datetime-local"><br><br>
+        </fieldset>
+
+
+
+
+    </form>
+</body>
+
+</html>
